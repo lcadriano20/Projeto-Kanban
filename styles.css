@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+h1 {
+    text-align: center;
+    color: #2196f3;
+}
+#add-task-form {
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+}
+#add-task-form input {
+    outline: none;
+    padding: .3rem;
+    margin-right: .5rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+button {
+    padding: .3rem 1rem;
+    background-color: #2196f3;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+
+.kanban {
+    display: flex;
+   justify-content: space-around;
+   margin-top: 1.5rem;
+}
+
+.column {
+    width: 30%;
+    background-color: #EEE;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+.tasks {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    min-height: 100px;
+}
+.tasks li {
+    background-color: #FFF;
+    padding: .8rem;
+    margin: .5rem 0;
+    border-radius: 5px;
+    cursor: move;
+    transition: 0.4s;
+}
+.tasks li.dragging {
+    opacity: 0.5;
+}
+.tasks li:hover {
+    background-color: #f5f5f5;
+}
+h2 {
+    text-align: center;
+}
+.deleted-tasks {
+    position: relative;
+    background-color: #EEE;
+    margin: 0 auto;
+    min-height: 200px;
+    width: 60%;
+}
+#done {
+    color: green;
+}
+.done-li {
+    display: flex;
+    justify-content: space-between;
+}
+.delete-btn {
+    padding: 3px;
+    background-color: red;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    transform: 1s; 
+}
+.delete-btn:hover {
+    
+}
+
+
+.delete-alltasks {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    
+}
